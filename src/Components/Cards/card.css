@@ -1,0 +1,85 @@
+/* Cards  */
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 95vw;
+    height:95vh;
+}
+
+.cards-grid{
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+ .top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+ }
+
+.card{
+    background-color: #d32f2f;
+    display: flex;
+    position: relative;
+    width: 5rem;
+    height: 8rem;
+border-radius: 5px;
+}
+.front{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.flipped .front{
+
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+
+
+.front-text {
+    width: .8rem;
+    height: .8rem;
+display: flex;
+position: absolute;
+align-items: center;
+justify-content: flex-start;
+padding: .2rem;
+font-size: 1rem;
+border-radius: .3rem;
+}
+img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.back{ 
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+}
+span{
+    display: flex;
+    font-size: 1rem;
+    font-weight: bolder;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: .2rem;
+}
+button{
+display: flex;
+color: black;
+padding: .5rem;
+border-radius: .4rem;
+background-color: rgb(84, 105, 7);
+margin-right: 1rem;
+}
